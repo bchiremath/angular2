@@ -1,0 +1,82 @@
+/* Master Styles */
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+h2, h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  font-family: 'Open Sans';
+}
+
+.app-wrap{
+	display:inline-block;
+}
+.chat{
+	width: 300px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+	border: 1px solid #c7c1c1;
+}
+.chat_header{
+	background:#555;
+	color:#fff;
+	display:flex;
+	padding:8px;
+	font-size:13px;
+    cursor: move;
+}
+.user{
+	flex:1;
+}
+.close_chat{
+	padding:0 8px;
+}
+.close_chat:hover{
+	background:#888;
+	cursor:pointer;
+}
+.message_list{
+    flex: 1;
+    font-size: 13px;   
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 8px; 
+}
+.type_message{
+	background:#456;
+}
+.message{
+	width:100%;
+	resize:none;
+	border-width: 1px 0 0 0;
+}
+.chat_msg {
+    word-break: break-word;
+}
+.msg_item{
+    margin-bottom: 2px;
+}
+.emoji {
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    margin-bottom: -0.25em;
+}
+*::-webkit-scrollbar {
+    width: 0.3em;
+		height: 0.5em;
+		background-color: transparent;				
+}
+*::-webkit-scrollbar-thumb {
+    background: #555;		
+}​
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}

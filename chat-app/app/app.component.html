@@ -1,0 +1,17 @@
+<section class="chat" #dragHandle>
+	<header class="chat_header">
+		<div class="user">Simpragma</div>
+		<div class="close_chat">x</div>
+	</header>
+	<div class="message_list" id="message_list">
+		<div *ngFor="let msg of messageList" class="msg_item">
+			<span><b>{{msg.sender}} : </b></span> <span class="chat_msg" #chatMsg>{{msg.text}}</span>
+		</div>
+	</div>
+	<div class="type_message">
+		<textarea class="message" rows="4" [(ngModel)]="message" (keydown.enter)="send($event)" autofocus placeholder="Press enter to send."></textarea>
+	</div>
+
+
+
+</section>
